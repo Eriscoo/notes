@@ -1,5 +1,3 @@
-import java.util.Scanner;
-
 public class reusepalindrome {
     
     // Reusable function untuk cek palindrome
@@ -8,9 +6,7 @@ public class reusepalindrome {
     }
 
     public static void main(String[] args) {
-        Scanner textInput = new Scanner(System.in);
-        System.out.print("Masukkan kata, frasa atau angka: ");
-        String text = textInput.nextLine();
+        String text = "kodok";
 
         // Gunakan reusable function
         if (isPalindrome(text)) {
@@ -18,7 +14,5 @@ public class reusepalindrome {
         } else {
             System.out.println(text + " bukanlah Palindrome.");
         }
-
-        textInput.close();
     }
 }
